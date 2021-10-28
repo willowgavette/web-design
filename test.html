@@ -62,17 +62,37 @@
 		<dt><h3>Friedrich Engels</h3></dt>
 		<dd>Friedrich Engels, sometimes anglicised as Frederick Engels (28 November 1820 – 5 August 1895), was a German philosopher, critic of political economy, historian, political theorist and revolutionary socialist.
 			<hr>
-			<div id="communism_unrelated">
-				<ol>
-					<li>This is the first item in an ordered list.</li>
-					<li>This is the second item in an ordered list.</li>
-				</ol>
+			
+			<hr>
+			<p>Your favorite communist: <select name="favcom">
+				<option>Karl Marx</option>
+				<option>Friedrich Engels</option>
+				<option>Vladimir Lenin</option>
+				<option>Joseph Stalin</option>
+				<option>Mao Zedong</option>
+			</select>
+			<p><input type="submit"> <input type="reset" value="Start over"></p>
 
-				<p>I am learning some basic HTML skills so I can strengthen my abilities as a web developer.<br>Here are some examples<br>of breaks<br>within a paragraph.</p>
-			</dd>
-		</dl>
-	</div>
-	<hr>
-	<h2><a href="#topOfPage">Would you like to go back to the top of the page? Click here!</a></h2>
-</body>
-</html>
+			<p>Please check each appropriate box:</p>
+			<ul>
+				<li><input type="checkbox" name="survey" value="I am based">I am based</li>
+				<li><input type="checkbox" name="survey" value="I am based">I am redpilled</li>
+				<li><input type="checkbox" name="survey" value="I am based">I am a communist</li>
+			</ul>
+			<form action="/client.php" method="post" enctype="multipart/form-data">
+				<label>Upload your own useless communist newspaper here:<br>
+					<input type="file" name="newspaper"></label>
+				</form>
+				<br>
+				<div id="communism_unrelated">
+					<ol>
+						<li>This is the first item in an ordered list.</li>
+						<li>This is the second item in an ordered list.</li>
+					</ol>
+
+					<p>I am learning some basic HTML skills so I can strengthen my abilities as a web developer.<br>Here are some examples<br>of breaks<br>within a paragraph.</p>
+				</dd>
+			</dl>
+		</div>
+
+		<h2><a href="#topOfPage">Would you like to go back to the top of the page? Click here!</a></h2>
